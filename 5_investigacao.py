@@ -5,6 +5,10 @@ def f_sim_count(r):
     r = str(r).lower()
     if(r == 's'):
         score += 1
+    elif (r == 'n'):
+        score += 0
+    else:
+        raise ValueError(f'Digite "s" ou "n"')
     return score
 
 #Dependendo das respostas, faz determinada acusação
@@ -17,9 +21,7 @@ def f_acusacao(score):
     elif(score == 3 or score == 4):
         status = 'Cúmplice'
     elif(score == 5):
-        status = 'Assassino'
-    else:
-        raise ValueError('Digite "s" ou "n".')   
+        status = 'Assassino' 
 
     return status         
 
