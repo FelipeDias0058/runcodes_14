@@ -50,7 +50,7 @@ def main():
     score += f_sim_count(r)
 
 
-    #Chama a função 'f_acusacao
+    #Chama a função 'f_acusacao'
     acusacao = f_acusacao(score)
 
     #Saída de Dados
